@@ -1,2 +1,5 @@
+gunicorn
+Flask (أو المكتبة التي تستخدمها)
+
 pyTelegramBotAPI
-flask
+

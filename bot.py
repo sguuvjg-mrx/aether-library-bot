@@ -1,12 +1,8 @@
-Flask
-pyTelegramBotAPI
-
-
 import os
 import threading
 from flask import Flask
 
-app = Flask('')
+app = Flask(__name__)
 
 @app.route('/')
 def home():

@@ -1,5 +1,6 @@
 Flask
 gunicorn
-python-telegram-bot
+pyTelegramBotAPI
 requests
+
 

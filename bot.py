@@ -52,9 +52,13 @@ def handle_message(message):
         )
     bot.reply_to(message, reply_text)
 
-# 5. تشغيل البوت في الخلفية مع سيرفر الفلاسك
+# 5. تشغيل البوت في الخلفية مع حذف أي Webhook قديم عائق
 def run_telegram_bot():
-    bot.infinity_polling()
+    try:
+        bot.remove_webhook()
+        bot.infinity_polling()
+    except Exception as e:
+        print(f"Bot error: {e}")
 
 if __name__ == "__main__":
     # تشغيل تليجرام في الخلفية عبر Thread

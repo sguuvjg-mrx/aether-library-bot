@@ -3,7 +3,7 @@ import threading
 import telebot
 from flask import Flask
 
-# 1. التوكن الجديد والآمن من BotFather
+# 1. التوكن الجديد الصحيح من BotFather
 TOKEN = "ضَع_التوكن_الجديد_هنا"
 bot = telebot.TeleBot(TOKEN)
 
@@ -42,7 +42,7 @@ def send_welcome(message):
 def handle_message(message):
     user_text = message.text
     book_link = find_book(user_text)
-    
+
     if book_link:
         reply_text = f"📚 رابط تحميل الكتاب:\n{book_link}"
     else:
@@ -65,7 +65,7 @@ if __name__ == "__main__":
     t = threading.Thread(target=run_telegram_bot)
     t.daemon = True
     t.start()
-    
+
     # تشغيل سيرفر الفلاسك على المنفذ المطلوب لـ Render
     port = int(os.environ.get('PORT', 10000))
     app.run(host='0.0.0.0', port=port)

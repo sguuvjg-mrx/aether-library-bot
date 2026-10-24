@@ -4,7 +4,7 @@ import telebot
 from flask import Flask
 
 # 1. التوكن الجديد الصحيح من BotFather
-TOKEN = "ضَع_التوكن_الجديد_هنا"
+TOKEN = "BotFather"
 bot = telebot.TeleBot(TOKEN)
 
 # 2. قاعدة بيانات الكتب البسيطة

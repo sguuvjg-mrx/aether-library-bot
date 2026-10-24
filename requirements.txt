@@ -1,5 +1,6 @@
+Flask
 gunicorn
-Flask (أو المكتبة التي تستخدمها)
+python-telegram-bot
+requests
 
-pyTelegramBotAPI
 

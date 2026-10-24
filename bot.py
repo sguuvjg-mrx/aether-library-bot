@@ -3,8 +3,8 @@ import threading
 import telebot
 from flask import Flask
 
-# 1. توكن البوت الحقيقي
-TOKEN = "8686110166:AAEJTbKCLI1co38L"
+# 1. توكن البوت الحقيقي الكامل والصحيح
+TOKEN = "8686110166:AAEJTbKCLI1co38LiTb2vuOZFpuffFfq2tY"
 bot = telebot.TeleBot(TOKEN)
 
 # 2. قاعدة بيانات الكتب البسيطة
